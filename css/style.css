@@ -1,0 +1,936 @@
+/*Cabeçalho*/
+body{
+    background-image: url("back.png");
+    background-size: 1300px;
+}
+.site{
+    margin: auto;
+    width: 1500px;
+}
+#propaganda{
+    border-radius: 10px;
+}
+#miolo{
+    background-color: rgb(255, 219, 225);
+    width: 1500px;
+    height: 1800px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    border-color: rgb(255, 194, 205);
+}
+.product{
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+    background-image: repeating-linear-gradient(45deg, rgb(253, 122, 144), rgb(253, 80, 103), rgb(194, 37, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.preco{
+    font-size: 35px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0 0 rgb(211, 48, 83), -2px 0 0 rgb(211, 48, 83), 0 2px 0 rgb(211, 48, 83), 0 -2px 0 rgb(211, 48, 83), 1px 1px rgb(211, 48, 83), -1px -1px 0 rgb(211, 48, 83), 1px -1px 0 rgb(211, 48, 83), -1px 1px 0 rgb(211, 48, 83);
+    font-family: 'Concert One', cursive;
+}
+.produtos{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    margin-right: 30px;
+}
+.caixas{
+    background-color: rgb(253, 246, 208);
+    height: 90px;
+    width: 400px;
+    text-align: center;
+    border-style: dashed;
+    border-color: rgb(253, 230, 127);
+}
+.sorvetes{
+    height: 400px;
+    width: 400px;
+    border-style: dashed;
+    border-color: rgb(250, 129, 170);
+}
+#imagemlogo{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-right: 50px;
+    margin: 0px 0px 0px 60px;
+}
+.cabecalho{
+    width: 1500px;
+    height: 200px;
+    display: flex;
+
+    align-items: center;
+    background-color: rgb(255, 248, 178);
+    margin-top: 20px;
+    justify-content: space-around;
+    border-style: double;
+    border-color: rgb(255, 204, 147);
+}
+.externos{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    
+}
+#sub{
+    width: 1500px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 254, 253);
+    margin: 20px 0px 20px 0px;
+    justify-content: space-evenly;
+    border-style: double;
+    border-color: rgb(197, 197, 197);
+
+}
+#caixas{
+    display: flex;
+}
+#caixas input{
+    height: 40px;
+    justify-content:  center;
+    width: 350px;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+#button{
+    height: 44px;
+    width: 100px;
+    font-size: 16px;
+    background-color: rgb(255, 184, 71);
+    font-family: 'Indie Flower', cursive;
+    border-top-right-radius: 10px;
+    border-end-end-radius: 10px;
+}
+#carrinho{
+    display: flex;
+    height: 35px;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 184, 71);
+    font-family: 'Indie Flower', cursive;
+}
+#carrinho a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+#perfil{
+    display: flex;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(255, 184, 71);
+    justify-content: space-between;
+}
+#conta{
+    display: flex;
+    height: 31px;
+    width: 120px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+#botao{
+    margin-left: 5px;
+}
+
+#conta a{
+    text-decoration: none;
+}
+/*rodapé link*/
+#link{
+    display: flex;
+    border-style: double;
+    border-color: rgb(22, 121, 121);
+    margin-bottom: 20px;
+}
+#links{
+    background-color: rgb(109, 189, 189);
+    height: 400px;
+    width: 1500px;
+}
+.linklista{
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    list-style-type: none;
+    font-family: 'Indie Flower', cursive;
+}
+.link1{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+
+
+
+
+/*footer*/
+#pe{
+    display: flex;
+    background-color: rgb(255, 248, 178);
+    width: 1500px;
+    height: 160px;
+    justify-content: space-between;
+    border-style: double;
+    border-color: rgb(255, 204, 147);
+}
+
+.logo-rodape {
+    margin-left: 60px;
+}
+#redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#imagemPé{
+    width: 200px;
+    height: 160px;
+}
+.social{
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    padding-right: 20px;
+}
+
+
+
+/*rodapé2*/
+#rodapé{
+    background-color: rgb(255, 255, 255);
+    width: 750px;
+    height: 320px;
+    margin-bottom: 20px;
+}
+#rodapé2{
+    width: 750px;
+    background-color: rgb(255, 255, 255);
+}
+#principal{
+    width: 1500px;
+    height: 320px;
+    display: flex;
+    border-style: double;
+    border-color: rgb(214, 214, 214);
+    margin-bottom: 20px;
+}
+.cartao{
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.cartoes{
+    padding: 10px;
+    margin-left: 40px;
+}
+.selo{
+    width: 150px;
+    height: 50px;
+    margin-left: 70px;
+}
+#pagamento{
+    font-size: 40px;
+   text-align: center;
+   font-family: 'Concert One', cursive;
+}
+#certificado{
+    font-size: 40px;
+   text-align: center;
+   margin-bottom: 80px;
+   font-family: 'Concert One', cursive;
+}
+#selos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+
+
+/*CLIENTE*/
+#BOX{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 800px;
+    margin: 30px 0px 30px 0px;
+    margin-bottom: 20px;
+}
+#cadastro{
+    background-color: rgb(253, 200, 209);
+    height: 700px;
+    width: 500px;
+    border-style: double;
+    border-color: rgb(252, 148, 165);
+    border-radius: 15px;
+    border-style:groove ;
+}
+#facebook{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cadastro form{
+    display: flex;
+    flex-direction: column;
+}
+#criar{
+    border-radius: 15px;
+    background-color: rgb(255, 143, 161);
+    height: 800px;
+    width: 500px;
+    margin-left: 50px;
+    border-color: rgb(247, 116, 138);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-style:groove ;
+
+}
+#usuario{
+    display: flex;
+    margin-top: 20px;
+    height: 100px;
+    width: 1500px;
+    background-color: rgb(40, 153, 153);
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    border-style: double;
+    border-color: rgb(17, 95, 95);
+}
+.caixaemail{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Concert One', cursive;
+}
+#Senha2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Concert One', cursive;
+}
+.caixa{
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+    margin: 10px 0px 0px 40px;
+    height: 40px;
+    width: 400px;
+}
+#Senha1{
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+    margin: 10px 0px 0px 90px;
+    height: 40px;
+    width: 300px;
+}
+#esqueceu{
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0px 5px 0px;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+    color: white;
+    padding-top: 5px;
+}
+.text1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Concert One', cursive;
+}
+
+.text2{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+}
+#botaoentrar{
+    font-family: 'Concert One', cursive;
+    width: 150px;
+    height:70px;
+    font-size: 35px;
+    border-radius: 20px;
+    margin: 5px 0px 0px 175px;
+    border-bottom-style: groove;
+    border-color: rgb(255, 182, 182);
+}
+#text3{
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0px 5px 0px;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+    color: white;
+    padding-top: 5px;
+    border-top-style: groove;
+    border-color: rgb(255, 182, 182);
+}
+.caixacadastro{
+    font-size: 25px;
+    font-family: 'Concert One', cursive;
+    color: white;
+}
+.caixacadastro2{
+    margin: 10px 0px 10px 0px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+#cadastrarcadastro{
+    width: 140px;
+    font-size: 20px;
+    margin:20px 0px 0px 175px;
+    border-radius: 10px;
+    font-family: 'Concert One', cursive;
+}
+
+
+
+
+
+/*Carrinho*/
+#miolocar{
+    height: 800px;
+    width: 1500px;
+    background-color: rgb(238, 248, 255);
+    margin: 20px 0px 20px 0px;
+    border-style: double;
+    border-color: rgb(161, 228, 228);
+}
+#miolocarrinho{
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+}
+#flexbox{
+    background-color: rgb(255, 255, 255);
+    height: 570px;
+    width: 670px;
+    border-style: double;
+    border-color: rgb(190, 190, 190);
+    margin: 50px 0px 0px 0px;
+}
+#add{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    color: black;
+}
+.flexbox2{
+    display: flex;
+   justify-content: space-evenly;
+    margin-top: 15px;
+    border-bottom: groove;
+    border-color: rgb(255, 255, 255);
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+#box{
+    display: flex;
+    gap: 110px;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-style: dotted;
+    border-color: rgb(224, 224, 224);
+    color:rgb(17, 78, 78);
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+}
+#meucarrinho{
+    margin-top: 20px;
+    display: flex;
+    height: 100px;
+    width: 1500px;
+    background-color:  rgb(40, 153, 153);
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Concert One', cursive;
+    font-size: 25px;
+    border-style: double;
+    border-color: rgb(17, 95, 95); ;
+}
+.meucarrinho2{
+    margin-top: 20px;
+}
+.images{
+    height: 70px;
+    width: 70px;
+    margin:0px 10px 10px 15px;
+    border-radius: 10px;    
+}
+.quant{
+    height: 20px;
+    width: 30px;
+}
+.produto{
+  margin-left: 80px;
+}
+.gg-trash{
+    margin-left: 30px;
+}
+
+/*CARRINHO OUTRA CAIXA*/
+#carrinho2{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 500px;
+    border-style: double;
+    border-color: rgb(190, 190, 190);
+    margin: 50px 0px 0px 40px;
+}
+#continuar{
+   margin-left: 150px;
+   height: 40px;
+   width: 200px;
+   font-family: 'Concert One', cursive;
+   font-size: 30px;
+   color: rgb(8, 32, 37);
+   border-radius: 10px;
+}
+#cupom{
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    margin-left: 40px;
+}
+#Resumo{
+    margin: 20px 0px 0px 20px;
+    color:rgb(18, 82, 82);
+    font-family: 'Concert One', cursive;
+}
+.pedido{
+    display: flex;
+    justify-content: space-between;
+    border-top: groove;
+    align-items: center;
+    border-color: rgb(255, 255, 255);
+    margin: 30px 20px 0px 20px;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+#sorvetinhos{
+    margin-top: 50px;
+}
+#finalizar{
+    width: 1500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*PEDIDO*/
+#entrega{
+   
+    display: flex;
+    justify-content: center;
+}
+#entrega2{
+   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#pedido{
+    background-color: rgb(235, 252, 255);
+    width: 700px;
+    height: 430px;
+    margin:20px 20px 0px 20px;
+    border-style: double;
+    border-color: rgb(161, 207, 250);
+    border-radius: 5px;
+}
+#formadepagamento{
+    margin-top: 20px;
+    background-color: rgb(253, 248, 175);
+    width: 500px;
+    height: 430px;
+    border-style: double;
+    border-radius: 5px;
+    border-color: rgb(233, 233, 118) ;
+}
+.info{
+    font-size: 20px;
+    margin-left: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+#possuicupom{
+    margin-left: 30px;
+    font-size: 35px;
+    font-family: 'Concert One', cursive;
+    color:rgb(10, 49, 49);
+}
+#correio{
+    font-size: 25px;
+    margin-left: 30px;
+}
+#enderecoentrega{
+    margin: 20px 25px 0px 30px;
+    font-size: 35px;
+    border-bottom-style: dotted;
+    border-color: rgb(183, 205, 224);
+    font-family: 'Concert One', cursive;
+    color:rgb(10, 49, 49);
+}
+#botoes{
+    display: flex
+}
+.endereco{
+    width: 430px;
+    height: 30px;
+    border-start-start-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 15px;
+}
+#botao2{
+    height: 36px;
+    width: 90px;
+    border-top-right-radius: 10px;
+    border-end-end-radius: 10px;
+}
+#pagamento{
+    font-size: 40px;
+    margin-left: 10px;
+    color:rgb(10, 49, 49);
+}
+.pagar{
+    margin-left: 30px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+#final{
+    margin-left: 30px;
+    font-size: 30px;
+    height: 50px;
+    width: 400px;
+    font-family: 'Concert One', cursive;
+    border-radius: 30px;
+    color:rgb(18, 82, 82);
+}
+
+
+
+/*QUEM SOMOS?*/
+#loja{
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    height: 1040px;
+    border-style: double;
+    border-color: rgb(112, 185, 207);
+}
+#sobre{
+    background-color: rgb(40, 153, 153);
+    display: flex;
+    justify-content: center;
+    font-family: 'Concert One', cursive;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    border-style: double;
+    border-color: rgb(17, 95, 95); ;
+}
+#missoes{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+#missao{
+    text-align: center;
+    height: 400px;
+    width: 370px;
+    border-radius: 10px;
+}
+#valores{
+    text-align: center;
+    height: 400px;
+    width: 370px;
+    border-radius: 10px;
+}
+#visao{
+    text-align: center;
+    height: 400px;
+    width: 370px;
+    border-radius: 10px;
+}
+#dev{
+    font-size: 40px;
+    font-family: 'Concert One', cursive;
+    margin: 0px 40px 40px 40px;
+    text-align: center;
+    background-color: white;
+    border-style: double;
+    border-color: rgb(201, 201, 201);
+}
+#mulher{
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: rgb(139, 201, 219);
+}
+#desenvol{
+    display: flex;
+}
+#textosobre{
+    margin: 30px 30px 0px 30px;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+.descricao{
+    font-size: 25px;
+     font-family: 'Indie Flower', cursive;
+}
+.title{
+    font-size: 40px;
+    font-family: 'Concert One', cursive;
+    border-bottom: groove;
+    color: rgb(0, 0, 0);
+    border-color: rgb(48, 102, 102);}
+
+
+
+
+/*PRODUTOS*/
+#smoothie{
+    display: flex;
+    justify-self: center;
+}
+#orange{
+    font-size: 50px;
+    margin-left: 90px;
+    font-family: 'Concert One', cursive;
+}
+#centro{
+    background-color: aliceblue;
+    height: 850px;   
+    margin-bottom: 20px;
+}
+#produto1{
+    display: flex;
+}
+#produto{
+    margin-left: 80px;
+    display: flex;
+}
+.canto{
+    margin: 0px 5px 5px 5px;
+}
+.bottom{
+    width: 100px;
+    height: 100px;
+}
+#principal2{
+    margin: 0px 0px 20px 80px;
+}
+#sorveteprincipal{
+    height: 490px;
+    width: 510px;
+}
+#comprar{
+    background-color: rgb(255, 255, 255);
+    height: 670px;
+    width: 830px;
+    margin: 0px 0px 0px 40px;
+}
+#sobresorvete{
+   font-size: 25px;
+   margin-left: 20px;
+   font-family: 'Indie Flower', cursive;
+}
+#titulo{
+    font-family: 'Concert One', cursive;
+    font-size: 60px;
+    margin-left: 20px;
+}
+#paraborder{
+    border-bottom-style: groove;
+    margin-bottom: 20px;
+    border-color: black;
+}
+#fazercompra{
+    display: flex;
+    font-family: 'Concert One', cursive;
+}
+#avaliacao{
+    font-size:20px ;
+    margin-left: 40px;
+    font-family: 'Concert One', cursive;
+}
+#fazercompra h2{
+    font-size: 60px;
+    margin: 0px 10px 0px 30px;
+}
+#setiver{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+#comprarproduto{
+    width: 300px;
+    height: 80px;
+    font-size: 60px;
+    margin-top: 20px;
+    font-family: 'Concert One', cursive;
+    border-radius: 10px;
+}
+
+
+
+/*DASHBOARD*/
+#dashboard{
+    background-color: aliceblue;
+    display: flex;
+    height: 750px;
+}
+#infocanto{
+    background-color: rgb(255, 248, 178);
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    border-style: dashed;
+    border-color: rgb(255, 212, 157);
+    margin-left: 30px;
+    font-family: 'Concert One', cursive;
+    margin-top: 30px;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+}
+.informacoes{
+    text-decoration: none;
+    color: black;
+}
+#produtoscadastrados{
+    background-color: aliceblue;
+    width: 950px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#cadastro2{
+    display: flex;
+}
+#productscadastro{
+    margin: 30px 0px 20px 20px;
+    font-family: 'Concert One', cursive;
+    color: rgb(85, 15, 32);
+}
+#cadastrados{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 450px;
+}
+#cadastrados2{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 450px;
+}
+.produtosdash{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Concert One', cursive;
+}
+.cadas{
+    height:70px ;
+    width: 70px;
+}
+.produtos2{
+    display: flex;
+    padding: 20px;
+}
+.itens{
+    margin: 25px 100px 0px 10px;
+    font-family: 'Indie Flower', cursive;
+}
+.preco2{
+   padding: 27px;
+   margin-left: 80px;
+   margin-bottom: 6px;
+   display: flex;
+}
+.editar{
+    margin:0px 20px 0px 150px;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Concert One', cursive;
+}
+.editar2{
+    border-radius: 10px;
+    font-family: 'Concert One', cursive;
+    background: transparent;
+}
+.bordergroove{
+    border-top-style: groove;
+}
+
+
+
+
+/*FORMULÁRIO*/
+#relatorio{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.formula{
+    margin-bottom: 5px;
+    font-family: 'Concert One', cursive;
+}
+.desc{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0 0 rgb(211, 48, 83), -2px 0 0 rgb(211, 48, 83), 0 2px 0 rgb(211, 48, 83), 0 -2px 0 rgb(211, 48, 83), 1px 1px rgb(211, 48, 83), -1px -1px 0 rgb(211, 48, 83), 1px -1px 0 rgb(211, 48, 83), -1px 1px 0 rgb(211, 48, 83);
+    font-family: 'Concert One', cursive;
+}
+.botaocadastrar{
+    margin-top:5px;
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    font-family: 'Indie Flower', cursive;
+}
+#botaocadastro{
+    margin-top:5px;
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    font-family: 'Concert One', cursive;
+}
