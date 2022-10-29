@@ -1,0 +1,16 @@
+CREATE TABLE categoria(
+    idCat integer AUTO_INCREMENT NOT NULL,
+    nomeCat VARCHAR(60) NOT NULL,
+    PRIMARY KEY(idCat)
+);
+
+CREATE TABLE produto(
+idProd integer AUTO_INCREMENT NOT NULL,
+nomeProd VARCHAR(50) NOT NULL,
+descProd VARCHAR(150) NOT NULL,
+precoProd DECIMAL(10,2) NOT NULL,
+imgProd blob NOT NULL,
+idCat integer NOT NULL,
+PRIMARY KEY(idProd),
+CONSTRAINT fk_catProd FOREIGN KEY (idCat) REFERENCES categoria (idCat)
+);
