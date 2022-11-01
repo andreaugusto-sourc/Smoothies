@@ -9,5 +9,10 @@ function exibirProds($conexao){
     $resultado = mysqli_query($conexao,$comando);
     return $resultado;
 }
+function exibirProd($conexao, $idProd){
+    $comando ="SELECT * FROM produto where idProd ='$idProd'";
+    $resultado = mysqli_query($conexao,$comando);
+    return $resultado;
+}
 
 ?>

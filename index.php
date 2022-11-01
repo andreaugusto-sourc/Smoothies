@@ -3,7 +3,7 @@ require_once 'CRUD/crud.php';
 $resultado = exibirProds($conexao);
 ?>
 <head>
-    <title>Document</title>
+    <title>Smoothies</title>
 </head>
 <body>
     <div class = "site">
@@ -12,9 +12,9 @@ $resultado = exibirProds($conexao);
         <?php while($produto = mysqli_fetch_assoc($resultado)):?>
             <div>
             <p class ="produtos">
-                    <a href="smoothielaranja.html" ><img src="images/smoothies0.png"  class = "sorvetes"  alt="não achamos o sorvete, de um refresh!" 
+                    <a href="exibirProd.php" ><img src="imagesUp/<?= $produto['imgProd']?>"  class = "sorvetes"  alt="não achamos o sorvete, de um refresh!" 
                     onmouseover="this.src = 'images/transition.png';"
-                    onmouseout="this.src = 'images/<?= $produto['imgProd']?>';"></a> 
+                    onmouseout="this.src = 'imagesUp/<?= $produto['imgProd']?>';"></a> 
                     
                 </p>
 

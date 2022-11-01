@@ -1,6 +1,6 @@
 /*Cabeçalho*/
 body{
-    background-image: url("back.png");
+    background-image: url("../images/back.png");
     background-size: 1300px;
 }
 .site{
@@ -849,7 +849,6 @@ body{
     display: flex;
 }
 #productscadastro{
-    margin: 30px 0px 20px 20px;
     font-family: 'Concert One', cursive;
     color: rgb(85, 15, 32);
 }
@@ -906,11 +905,13 @@ body{
 
 /*FORMULÁRIO*/
 #relatorio{
+    width: 200px;
+    padding: 20px;
     margin-left: 40px;
     font-size: 20px;
 }
 .formula{
-    margin-bottom: 5px;
+    margin-bottom: 9px;
     font-family: 'Concert One', cursive;
 }
 .desc{
@@ -932,4 +933,13 @@ body{
     width: 150px;
     font-size: 18px;
     font-family: 'Concert One', cursive;
+}
+
+#categoria{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 40px;
+    margin-top: 50px;
 }

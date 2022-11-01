@@ -2,7 +2,7 @@ const cabeca = () =>{
     let cabeca = document.querySelector('div.header')
     cabeca.innerHTML =`
     <div class = "cabecalho">
-            <a href="index.html"><img src = "images/smoothieslogo.png" id= "imagemlogo" alt= "não achamos a imagem"></a>
+            <a href="index.php"><img src = "images/smoothieslogo.png" id= "imagemlogo" alt= "não achamos a imagem"></a>
 
             <form id="caixas" action ="" method= "post">
                 <label for class ="quest"></label>

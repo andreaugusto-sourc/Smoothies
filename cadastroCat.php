@@ -4,7 +4,8 @@
 <body>
 <div class = "site">
 <?php include 'header.php' ?>
-
+<h1 class="desc">oi</h1>
+<div id="categoria">
 <form action="salvarCat.php" method="post">
 <div class="formula">
 <label for = "nomeCat" class="desc">
@@ -16,8 +17,7 @@
 
 
 </form>
-  
-<?php include 'footer.php'?>
 </div>
+<?php include 'footer.php'?>
 </body>
 

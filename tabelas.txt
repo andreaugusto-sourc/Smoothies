@@ -14,3 +14,14 @@ idCat integer NOT NULL,
 PRIMARY KEY(idProd),
 CONSTRAINT fk_catProd FOREIGN KEY (idCat) REFERENCES categoria (idCat)
 );
+
+CREATE TABLE usuario(
+    idUsu integer AUTO_INCREMENT NOT NULL,
+    nomeUsu VARCHAR(50) NOT NULL,
+    senhaUsu VARCHAR(50) NOT NULL,
+    cpfUsu VARCHAR(11) NOT NULL,
+    nascUsu DATE NOT NULL,
+    emailUsu VARCHAR(50) NOT NULL,
+    sexoUsu 
+    telUsu VARCHAR(11)
+);
