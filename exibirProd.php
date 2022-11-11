@@ -1,6 +1,8 @@
 <?php
 require_once 'CRUD/crud.php';
-$resultado - exibirProd($conexao);
+$idProd = $_GET['idProd'];
+$resultado = exibirProd($conexao,$idProd);
+$produto = mysqli_fetch_assoc($resultado);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +20,14 @@ $resultado - exibirProd($conexao);
     <div id="produto1">
     <div id="produtos">
         <div id="principal2">
-        <img src = "<?=$produto['imgProd']?>" alt ="não achamos essa delícia, de um refresh!!">
+        <img src = "imagesUp/<?=$produto['imgProd']?>" class ="imgPrincipal" alt ="não achamos essa delícia, de um refresh!!">
         </div>
         <div id="produto">
             <div class="canto">
-                <img class="bottom" src="images/smoothies6.png">
+                <img class="bottom" src="imagesUp/<?=$produto['imgProd']?>">
             </div>
             <div class="canto">
-                <img class="bottom" src="images/produtos/casa1.png">
+                <img class="bottom" src="imagesUp/<?=$produto['imgProd']?>">
             </div>
         </div>
     </div>
@@ -42,7 +44,7 @@ $resultado - exibirProd($conexao);
             </div>  
         </div>
     <div id="sobresorvete">
-        <p><?=$produto['$descProd']?></p>
+        <p><?=$produto['descProd']?></p>
     </div>
     </div>
  </div>

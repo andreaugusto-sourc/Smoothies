@@ -185,6 +185,9 @@ body{
 
 
 /*footer*/
+footer{
+    margin-top: 20px;
+}
 #pe{
     display: flex;
     background-color: rgb(255, 248, 178);
@@ -756,6 +759,11 @@ body{
 .bottom{
     width: 100px;
     height: 100px;
+}
+.imgPrincipal{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
 }
 #principal2{
     margin: 0px 0px 20px 80px;
