@@ -1,18 +1,18 @@
 /*Cabeçalho*/
 body{
     background-image: url("../images/back.png");
-    background-size: 1300px;
+    
 }
 .site{
-    margin: auto;
-    width: 1500px;
+    margin: 0 auto;
+    max-width: 1224px;
 }
 #propaganda{
     border-radius: 10px;
 }
 #miolo{
     background-color: rgb(255, 219, 225);
-    width: 1500px;
+    
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -65,7 +65,7 @@ body{
     margin: 0px 0px 0px 60px;
 }
 .cabecalho{
-    width: 1500px;
+
     height: 200px;
     display: flex;
 
@@ -84,7 +84,7 @@ body{
     
 }
 #sub{
-    width: 1500px;
+
     height: 90px;
     display: flex;
     align-items: center;
@@ -164,10 +164,9 @@ body{
     border-color: rgb(22, 121, 121);
     margin-bottom: 20px;
 }
-#links{
+.links{
     background-color: rgb(109, 189, 189);
-    height: 400px;
-    width: 1500px;
+    width: 25vw;
 }
 .linklista{
     text-decoration: none;
@@ -191,7 +190,6 @@ footer{
 #pe{
     display: flex;
     background-color: rgb(255, 248, 178);
-    width: 1500px;
     height: 160px;
     justify-content: space-between;
     border-style: double;
@@ -221,18 +219,15 @@ footer{
 
 /*rodapé2*/
 #rodapé{
-    background-color: rgb(255, 255, 255);
-    width: 750px;
-    height: 320px;
+    width: 50vw;
     margin-bottom: 20px;
 }
 #rodapé2{
-    width: 750px;
-    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    
 }
 #principal{
-    width: 1500px;
-    height: 320px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     border-style: double;
     border-color: rgb(214, 214, 214);
@@ -913,7 +908,7 @@ footer{
 
 /*FORMULÁRIO*/
 #relatorio{
-    width: 200px;
+    
     padding: 20px;
     margin-left: 40px;
     font-size: 20px;
@@ -927,6 +922,13 @@ footer{
     color: rgb(255, 255, 255);
     text-shadow: 2px 0 0 rgb(211, 48, 83), -2px 0 0 rgb(211, 48, 83), 0 2px 0 rgb(211, 48, 83), 0 -2px 0 rgb(211, 48, 83), 1px 1px rgb(211, 48, 83), -1px -1px 0 rgb(211, 48, 83), 1px -1px 0 rgb(211, 48, 83), -1px 1px 0 rgb(211, 48, 83);
     font-family: 'Concert One', cursive;
+}
+#cadastrodeproduto{
+    width:400px;
+}
+
+#cadastrodeproduto input,select{
+    width: 100%;
 }
 .botaocadastrar{
     margin-top:5px;
@@ -951,3 +953,19 @@ footer{
     padding: 40px;
     margin-top: 50px;
 }
+
+#dash{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#dash li{
+    margin:20px 0;
+
+}
+#dash li a{
+    margin:0 20px;
+}
+
+

@@ -30,10 +30,10 @@
 
         </div>
         <div id= "sub">
-            <a href="smoothiequemsomos.html" class="externos">Sobre a Loja</a>
-            <a href="dashboard.html"  class="externos">Dashboard</a>
-            <a href="smoothiequemsomos.html" class="externos">Quem somos nós?</a>
-            <a href="cliente.html"  class="externos">Cadastro</a>
-        </div>`
+            <a href="smoothiequemsomos.php" class="externos">Sobre a Loja</a>
+            <a href="dashboard.php"  class="externos">Dashboard</a>
+            <a href="smoothiequemsomos.php" class="externos">Quem somos nós?</a>
+            <a href="cliente.php"  class="externos">Cadastro</a>
+        </div>
 </header>
 

@@ -14,15 +14,15 @@ function exibirProd($conexao,$idProd){
     $resultado = mysqli_query($conexao,$comando);
     return $resultado;
 }
-function deletarProd ($conexao,$idProd) {
+function deletarProd($conexao,$idProd) {
     $comando = "DELETE FROM produto where idProd = '$idProd'";
     $resultado = mysqli_query($conexao,$comando);
     return $resultado;
 }
-function atualizarProd ($conexao,$idProd,$novoNome,$novaDesc,$novoPreco,$novaImg,$novoIdCat) {
+function atualizarProd($conexao,$idProd,$novoNome,$novaDesc,$novoPreco,$novaImg,$novoIdCat) {
     $comando = "UPDATE produto SET nomeProd = '$novoNome', descProd = '$novaDesc', precoProd = '$novoPreco', imgProd = '$novaImg', idCat = '$novoIdCat' where idProd = '$idProd' ";
     $resultado = mysqli_query($conexao,$comando);
-    $resultado;
+    return $resultado;
 }
 
 ?>

@@ -1,6 +1,6 @@
 <footer class="footer">
 <footer id= "link">
-                <div id = "links">
+                <div class = "links">
                     <h1 class  = "link1">Nossa Loja</h1>
                 <ul>
                     <li class = "linklista">
@@ -24,7 +24,7 @@
                 </ul>
                 </div>
 
-                <div id = "links">
+                <div class = "links">
                     <h1 class  = "link1">Nossa Loja</h1>
                 <ul>
                     <li class = "linklista">
@@ -48,7 +48,7 @@
                 </ul>
                 </div>
 
-                <div id = "links">
+                <div class = "links">
                     <h1 class = "link1">Nossa Loja</h1>
                 <ul>
                     <li class = "linklista">
@@ -72,7 +72,7 @@
                 </ul>
                 </div>
 
-                <div id = "links">
+                <div class = "links">
                     <h1 class  = "link1">Nossa Loja</h1>
                 <ul>
                     <li class = "linklista">
