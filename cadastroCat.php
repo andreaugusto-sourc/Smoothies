@@ -4,7 +4,7 @@
 <body>
 <div class = "site">
 <?php include 'header.php' ?>
-<h1 class="desc">oi</h1>
+<h1 class="desc">CADASTRAR CATEGORIA:</h1>
 <div id="categoria">
 <form action="salvarCat.php" method="post">
 <div class="formula">

@@ -1,4 +1,8 @@
 <?php 
+
+require_once 'categoriaCrud.php';
+require_once 'produtoCrud.php';
+
 $conexao = mysqli_connect("localhost","root","","smoothies");
 
 if(!$conexao){
@@ -41,8 +45,5 @@ function moverImg($nameImg) {
 
 
 }
-
-require_once 'categoriaCrud.php';
-require_once 'produtoCrud.php';
 
 ?>

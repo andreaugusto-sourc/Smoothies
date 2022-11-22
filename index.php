@@ -15,9 +15,10 @@ $resultado = mysqli_query($conexao, $comando);
 <body>
     <div class = "site">
     <?php include 'header.php' ?>
+    <video autoplay loop muted src="images/propaganda.mp4" id="propaganda"></video>
     <div id= "miolo">
         <?php while($produto = mysqli_fetch_assoc($resultado)):?>
-            <div>
+            <div id="produtosindex">
             <p class ="produtos">
                     <a href="exibirProd.php?idProd=<?= $produto['idProd']?>" ><img src="imagesUp/<?= $produto['imgProd']?>"  class = "sorvetes"  alt="não achamos o sorvete, de um refresh!" 
                     onmouseover="this.src = 'images/transition.png';"
