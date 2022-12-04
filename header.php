@@ -32,7 +32,7 @@
             </form>
             <form action ="" method= "post" >
                 <button type="submit" id= "carrinho" >
-                 <a href="smoothiescarrinho.html"> <i class="gg-shopping-cart"></i><p id= "botao">Carrinho</p></a> 
+                 <a href="carrinho.php" id= "botao"> <i class="gg-shopping-cart"></i>Carrinho</a> 
                 </button>
             </form>
             <form action ="" method= "post">
