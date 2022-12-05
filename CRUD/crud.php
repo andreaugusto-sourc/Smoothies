@@ -2,6 +2,7 @@
 
 require_once 'categoriaCrud.php';
 require_once 'produtoCrud.php';
+require_once 'usuarioCrud.php';
 
 $conexao = mysqli_connect("localhost","root","","smoothies");
 

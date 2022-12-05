@@ -40,7 +40,7 @@ $produto = mysqli_fetch_assoc($resultado);
             <h2>Fazer sua Compra</h2>
             <div id="buy">
             <button id="comprarproduto">Comprar</button>   
-            <a href="adicionarCarrinho.php?addCarrinho=<?=$produto['idProd']?>">Add carrinho</a>
+            <a href="funcoesCarrinho.php?addCarrinho=<?=$produto['idProd']?>">Adicionar produto ao carrinho</a>
             <p id="setiver">Se tiver cupons, adicione ao colocar no carrinho!</p>   
             </div>  
         </div>

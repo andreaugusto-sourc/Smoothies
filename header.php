@@ -9,8 +9,7 @@
     <link href='https://css.gg/icecream.css' rel='stylesheet'>
     <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-36x36.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" href="images\favicon.ico">
     <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,32 +20,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <header class="header">
-<div class = "cabecalho">
-            <a href="index.php"><img src = "images/smoothieslogo.png" id= "imagemlogo" alt= "não achamos a imagem"></a>
+    <div class="cabecalho">
+        <a href="index.php"><img src="images/smoothieslogo.png" id="imagemlogo" alt="não achamos a imagem"></a>
 
-            <form id="caixas" action="index.php" method= "get">
-                <label for="quest"></label>
-                <input class= "quest" name="pesquisa" type= "text" placeholder="Pesquisar delicias">
+        <form id="caixas" action="index.php" method="get">
+            <input class="quest" name="pesquisa" type="text" placeholder="Pesquisar delicias">
+            <button type="submit" id="button">Pesquisar</button>
+        </form>
 
-                <button type="submit" id= "button">Pesquisar</button>
-            </form>
-            <form action ="" method= "post" >
-                <button type="submit" id= "carrinho" >
-                 <a href="carrinho.php" id= "botao"> <i class="gg-shopping-cart"></i>Carrinho</a> 
-                </button>
-            </form>
-            <form action ="" method= "post">
-                <button type="submit" id= "perfil">
-                 <p id = "conta"> <i class="gg-icecream"><a href="cliente.html"></i>Minha Conta</p></a>
-                </button>
-            </form>
+        <a href="carrinho.php"><i class="gg-shopping-cart"></i>Carrinho</a>
 
-        </div>
-        <div id= "sub">
-            <a href="smoothiequemsomos.php" class="externos">Sobre a Loja</a>
-            <a href="dashboard.php"  class="externos">Dashboard</a>
-            <a href="smoothiequemsomos.php" class="externos">Quem somos nós?</a>
-            <a href="cliente.php"  class="externos">Cadastro</a>
-        </div>
+        <?php if(isset($_SESSION['usuario'])) {
+            echo "<a href='deslogarUsu.php'>Logout<a>";
+        }?>
+        
+    </div>
+    <div id="sub">
+        <a href="sobre.php" class="externos">Sobre a Loja</a>
+        <a href="dashboard.php" class="externos">Dashboard</a>
+        <a href="sobre.php" class="externos">Quem somos nós?</a>
+        <a href="cadastroUsu.php" class="externos">Cadastro</a>
+    </div>
 </header>
-

@@ -1,14 +1,21 @@
 <?php
-require_once "CRUD/crud.php";
+session_start();
 
-$nome = $_POST['nomeCat'];
-
-echo $nome;
-
-$resultado = addCat($conexao,$nome);
-if($resultado){
-    echo "Sucesso!";
-}else{
-    echo "Erro";
+if(!isset($_SESSION['adm'])) {
+    die("Tu não tem permissão administradora! <br> <a href='loginAdm.php'>Faça o login</a>"); 
 }
+
+
+    require_once "CRUD/crud.php";
+    
+    $nome = $_POST['nomeCat'];
+    
+    $resultado = addCat($conexao,$nome);
+    
+    if($resultado){
+        echo "Sucesso!";
+    }else{
+        echo "Erro";
+    }
+
 ?>

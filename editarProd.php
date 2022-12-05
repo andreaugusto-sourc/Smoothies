@@ -50,15 +50,19 @@ $produto = mysqli_fetch_assoc($resultado2);
 <label for = "imgProd" class="desc">
     Imagem:
 </label>
-<input type="file" value="<?= $produto['imgProd']?> name="imgProd" id="imgProd"  class="botaocadastrar">
-
+<input type="file" value="<?= $produto['imgProd']?>" name="imgProd" id="imgProd"  class="botaocadastrar">
 
 <h2 class="desc">Categoria:</h2>
 
 <select name="idCat" value="<?= $produto['idCat']?>" class="botaocadastrar">
 <?php while ($cat = mysqli_fetch_assoc($resultado)){
-    echo "<option>" . $cat['idCat'] . "-" . $cat['nomeCat'] . 
-    "</option>";
+    if($cat['idCat'] == $produto['idCat']) {
+        echo "<option selected>" . $cat['idCat'] . "-" . $cat['nomeCat'] . "</option>";
+    }else{
+        echo "<option>" . $cat['idCat'] . "-" . $cat['nomeCat'] . 
+        "</option>";
+    }
+
 }
 ?>
 

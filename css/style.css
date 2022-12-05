@@ -121,7 +121,7 @@ body{
     border-top-right-radius: 10px;
     border-end-end-radius: 10px;
 }
-#carrinho{
+.carrinho{
     display: flex;
     height: 35px;
     width: 130px;
@@ -132,7 +132,7 @@ body{
     background-color: rgb(255, 184, 71);
     font-family: 'Indie Flower', cursive;
 }
-#carrinho a{
+.carrinho a{
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -435,6 +435,9 @@ footer{
     display: flex; 
     justify-content: center;
     margin-top: 20px;
+}
+#dash img{
+    width: 12vw;
 }
 #flexbox{
     background-color: rgb(255, 255, 255);
@@ -973,5 +976,7 @@ footer{
 #dash li a{
     margin:0 20px;
 }
-
+#miolo #dash .flexbox2{
+    width: 100%;
+}
 

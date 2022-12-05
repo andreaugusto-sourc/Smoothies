@@ -1,12 +1,13 @@
 <?php
 require_once 'CRUD/crud.php';
-$resultado = exibirProds($conexao);
+session_start();
 
 if(isset($_GET['pesquisa'])) {
-    $busca = $_GET['pesquisa'];
-
-$comando = "SELECT * FROM produto where nomeProd like '$busca'";
-$resultado = mysqli_query($conexao, $comando);
+    $pesquisa = $_GET['pesquisa'];
+    $comando = "SELECT * FROM produto where nomeProd like '$pesquisa%'";
+    $resultado = mysqli_query($conexao, $comando);
+}else{
+    $resultado = exibirProds($conexao);
 }
 ?>
 <head>
@@ -28,7 +29,7 @@ $resultado = mysqli_query($conexao, $comando);
 
 
                 <div class="caixas">
-                    <a href="smoothielaranja.html"  class="product"><?= $produto['nomeProd']?></a>
+                    <a href="exibirProd.php?idProd=<?= $produto['idProd']?>"  class="product"><?= $produto['nomeProd']?></a>
                     <p class="preco"><?= $produto['precoProd']?></p>
                 </div>
             </div>

@@ -19,9 +19,7 @@ CREATE TABLE usuario(
     idUsu integer AUTO_INCREMENT NOT NULL,
     nomeUsu VARCHAR(50) NOT NULL,
     senhaUsu VARCHAR(50) NOT NULL,
-    cpfUsu VARCHAR(11) NOT NULL,
-    nascUsu DATE NOT NULL,
+    cpfUsu CHAR(11) NOT NULL,
     emailUsu VARCHAR(50) NOT NULL,
-    sexoUsu 
-    telUsu VARCHAR(11)
+    PRIMARY KEY(idUsu)
 );
