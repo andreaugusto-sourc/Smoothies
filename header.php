@@ -8,6 +8,7 @@
     <script defear src="smoothies.js"></script>
     <link href='https://css.gg/icecream.css' rel='stylesheet'>
     <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" href="images\favicon.ico">
     <link rel="manifest" href="site.webmanifest">
@@ -31,7 +32,7 @@
         <a href="carrinho.php"><i class="gg-shopping-cart"></i>Carrinho</a>
 
         <?php if(isset($_SESSION['usuario'])) {
-            echo "<a href='deslogarUsu.php'>Logout<a>";
+            echo "<a href='deslogarUsu.php'><i class='fa fa-sign-out'></i>Logout<a>";
         }?>
         
     </div>

@@ -19,7 +19,7 @@ if(isset($_SESSION['usuario'])) {
         <input type="password" name="senhaUsu" id="senhaUsu">
 
         <label for="cpfUsu">Cpf de usuário:</label>
-        <input type="text" name="cpfUsu" id="cpfUsu">
+        <input type="number" name="cpfUsu" id="cpfUsu">
 
         <button type="submit">Cadastrar</button>
     </form>
