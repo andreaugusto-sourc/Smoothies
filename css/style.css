@@ -111,7 +111,6 @@ body{
     border-top-left-radius: 10px;
     border-end-start-radius: 10px;
 }
-
 #button{
     height: 44px;
     width: 100px;
@@ -132,11 +131,13 @@ body{
     background-color: rgb(255, 184, 71);
     font-family: 'Indie Flower', cursive;
 }
+
 .carrinho a{
     display: flex;
     text-decoration: none;
     align-items: center;
 }
+
 #perfil{
     display: flex;
     height: 35px;
@@ -955,7 +956,6 @@ footer{
 }
 
 #categoria{
-
     justify-content: center;
     align-items: center;
     display: flex;
@@ -980,3 +980,32 @@ footer{
     width: 100%;
 }
 
+.salvarUsu{
+    font-size: 25px;
+    font-family: 'Concert One', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0 0 rgb(211, 48, 83), -2px 0 0 rgb(211, 48, 83), 0 2px 0 rgb(211, 48, 83), 0 -2px 0 rgb(211, 48, 83), 1px 1px rgb(211, 48, 83), -1px -1px 0 rgb(211, 48, 83), 1px -1px 0 rgb(211, 48, 83), -1px 1px 0 rgb(211, 48, 83);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20;
+}
+#nomeUsu{
+    margin-left: 520;
+    margin-bottom: 20;
+}
+#emailUsu{
+    margin-left: 520;
+    margin-bottom: 20;
+}
+#senhaUsu{
+    margin-left: 520;
+    margin-bottom: 20;
+}
+#cpfUsu{
+    margin-left: 520;
+    margin-bottom: 20;
+}
+#castrastarUsu{
+    margin-left: 570;
+}

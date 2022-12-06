@@ -1,7 +1,7 @@
 
 <?php
-require_once 'CRUD/crud.php';
 session_start();
+require_once 'CRUD/crud.php';
 $resultado = exibirProds($conexao);
 
 if(!isset($_SESSION['adm'])){
@@ -25,6 +25,8 @@ if(!isset($_SESSION['adm'])){
 </li>
 <?php endwhile ?>
 </ul>
+<a href="cadastroCat.php">Adicionar categoria</a>
+<a href="cadastroProd.php">Adicionar produto</a>
 
 </div>
 

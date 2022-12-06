@@ -46,7 +46,7 @@ $resultado = addUsu($conexao,$nomeUsu,$senhaUsu,$cpfUsu,$emailUsu);
 if($resultado) {
     echo "Sucesso no cadastro!";
     $_SESSION['usuario'] = $cpfUsu;
-    header("Location: http://localhost/smoothies/index.php");
+  
 }else{
     echo "Erro no cadastro, revise as informações";
 }

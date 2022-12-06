@@ -9,19 +9,19 @@ if(isset($_SESSION['usuario'])) {
     <?php include 'header.php'?>
     
     <form action="salvarUsu.php" method="post">
-        <label for="nomeUsu">Nome de usuário:</label>
+        <label for="nomeUsu" class="salvarUsu">Nome de usuário:</label>
         <input type="text" name="nomeUsu" id="nomeUsu">
 
-        <label for="emailUsu">E-mail de usuário:</label>
+        <label for="emailUsu" class="salvarUsu">E-mail de usuário:</label>
         <input type="email" name="emailUsu" id="emailUsu">
 
-        <label for="senhaUsu">Senha de usuário:</label>
+        <label for="senhaUsu" class="salvarUsu">Senha de usuário:</label>
         <input type="password" name="senhaUsu" id="senhaUsu">
 
-        <label for="cpfUsu">Cpf de usuário:</label>
-        <input type="number" name="cpfUsu" id="cpfUsu">
+        <label for="cpfUsu" class="salvarUsu">Cpf de usuário:</label>
+        <input type="number" name="cpfUsu" id="cpfUsu" >
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit" id="castrastarUsu">Cadastrar</button>
     </form>
 
     <?php include 'footer.php'?>

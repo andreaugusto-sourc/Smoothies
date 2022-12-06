@@ -1,9 +1,11 @@
 <?php
 session_start();
 require_once 'CRUD/crud.php';
+
 if(!isset($_SESSION['adm'])) {
     die("Tu não tem permissão administradora! <br> <a href='loginAdm.php'>Faça o login</a>"); 
 }
+    $erro = false;
     $nomeProd = $_POST['nomeProd'];
     $descProd = $_POST['descProd'];
     $precoProd = $_POST['precoProd'];
@@ -27,12 +29,10 @@ if(!isset($_SESSION['adm'])) {
         }
     }
     
-    if(strlen($nomeProd) > 8) {
+    if(strlen($nomeProd) > 20) {
        $erro = "Nome do produto muito longo!";
     }
-    if(strlen($descProd) > 11) {
-        $erro =" Descrição do produto muito longa!";
-    }   
+
     
     if ( $erro ) {
         die($erro) ;
@@ -43,7 +43,7 @@ if(!isset($_SESSION['adm'])) {
 if($resultado){
     echo "Sucesso!";
 }else{
-    echo "Erro";
+    echo "Erro na inserção";
 }
 
 

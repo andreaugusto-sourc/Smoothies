@@ -29,7 +29,7 @@
             <button type="submit" id="button">Pesquisar</button>
         </form>
 
-        <a href="carrinho.php"><i class="gg-shopping-cart"></i>Carrinho</a>
+        <button type="submit" class="carrinho"><a href="carrinho.php"><i class="gg-shopping-cart"></i>Carrinho</a></button>
 
         <?php if(isset($_SESSION['usuario'])) {
             echo "<a href='deslogarUsu.php'><i class='fa fa-sign-out'></i>Logout<a>";

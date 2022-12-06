@@ -4,7 +4,7 @@ session_start();
 
 if(isset($_GET['pesquisa'])) {
     $pesquisa = $_GET['pesquisa'];
-    $comando = "SELECT * FROM produto where nomeProd like '$pesquisa%'";
+    $comando = "SELECT * FROM produto where nomeProd like '%$pesquisa%'";
     $resultado = mysqli_query($conexao, $comando);
 }else{
     $resultado = exibirProds($conexao);
